@@ -1,0 +1,22 @@
+/*
+ Two numbers are entered through the keyboard. Write a java program to find the value of one number raised to the power of another. (Do not use Java built-in method)
+        Sample Output:
+        Enter the base number : 5
+        Enter the power 4
+        Result: 625
+*/
+
+        package loopprograme;
+import java.util.Scanner;
+public class powernum {
+    public static void main(String[] args) {
+        Scanner kb=new Scanner(System.in);
+        int num,pwr,val;
+        num=kb.nextInt();
+        pwr=kb.nextInt();
+        val=(int)Math.pow(num,pwr);
+        System.out.println("Value:"+val);
+
+
+    }
+}
