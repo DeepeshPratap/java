@@ -1,0 +1,30 @@
+/*
+Write a java program that prompts the user to input an integer and then outputs the number with the digits reversed.
+        For example, if the input is 12345, the output should be 54321.
+
+        Sample Output:
+        Enter the number 12345
+        Reverse of 12345 is 54321
+*/
+
+package loopprograme;
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+public class reverse {
+    public static void main(String[] args) {
+        Scanner kb=new Scanner(System.in);
+        int rem,dig,n1,sum=0;
+        System.out.println("Enter no. Digits:");
+        int digit=kb.nextInt();
+        System.out.println("Enter no:");
+        int num=kb.nextInt();
+       for(int i=1;i<=digit;i++) {
+           rem = num % 10;
+           n1=(int)(rem*Math.pow(10,(digit - i)));
+           sum=sum+n1;
+           num=num/10;
+       }
+        System.out.println("Reverse no. is:"+sum);
+    }
+}
