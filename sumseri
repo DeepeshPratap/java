@@ -1,0 +1,29 @@
+/*
+Write a java program to take an input from the user that reads a set of integers, and then prints the sum of the even and odd integers. 
+
+Sample Output: 
+Enter the number: 12
+ Do you want to continue y/n? y 
+Enter the number: 15 
+Do you want to continue y/n? n
+ Sum of even numbers: 12 
+Sum of odd numbers: 15
+*/
+package loopprograme;
+import java.util.Scanner;
+
+public class Sumseri {
+    public static void main(String[] args) {
+        Scanner kb=new Scanner(System.in);
+
+        do
+        {
+            System.out.println("Enter the no. you want to sum:");
+            int num=kb.nextInt();
+            System.out.println("Do You want to continue:");
+            string str=kb.next();
+        }while(str.equalsIgnoreCase(y));
+
+    }
+
+}
