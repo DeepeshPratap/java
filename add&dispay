@@ -1,0 +1,39 @@
+/*
+6. Write a java program to do-while loop that asks the user to enter two numbers.
+ The numbers should be added and the sum displayed.
+ The loop should ask the user whether he or she wishes to perform the operation again.
+ If so, the loop should repeat; otherwise it should terminate.
+
+Sample Output:
+Enter the first number: 3
+Enter the second number: 15
+Sum of numbers: 18
+Do you want to continue y/n? y
+Enter the first number: 12
+Enter the second number: 10
+Sum of numbers: 22
+ Do you want to continue y/n? n
+ */
+
+
+package loopprograme;
+import java.util.Scanner;
+
+import java.sql.SQLOutput;
+
+public class addisplay {
+    public static void main(String[] args) {
+        Scanner kb=new Scanner(System.in);
+        String str;
+        char ch;
+        int num1,num2;
+        do {
+            System.out.println("Enter no. you whant to add:");
+            num1 = kb.nextInt();
+            num2 = kb.nextInt();
+            System.out.println("Sum:"+(num1+num2));
+            System.out.println("Do you want to repeat operation:");
+            str=kb.next();
+        }while(str.equalsIgnoreCase("y"));
+    }
+}
